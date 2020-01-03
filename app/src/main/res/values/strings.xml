@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Material Login Example</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+</resources>

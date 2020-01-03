@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "528131565581",
+    "firebase_url": "https://domestic-violence-detector0.firebaseio.com",
+    "project_id": "domestic-violence-detector0",
+    "storage_bucket": "domestic-violence-detector0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528131565581:android:cd9f5eb61a7e7473fc0d44",
+        "android_client_info": {
+          "package_name": "com.sourcey.domesticviolencedetector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528131565581-1j7ancakq4vmc2gg3f2jfsf1p3qila6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sourcey.domesticviolencedetector",
+            "certificate_hash": "73773553bedd7189e898f81fbc621c0e8e125ddb"
+          }
+        },
+        {
+          "client_id": "528131565581-llgaps1inslidj358f8u83i9qm1329bk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPQV6e31vXZK5HQDr6VaJzF-QO42ApFHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528131565581-llgaps1inslidj358f8u83i9qm1329bk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
