@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    app:context="com.agu.domesticviolencedetector.SignupActivity3"
+    app:ignore="NamespaceTypo">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="56dp"
+        android:paddingTop="36dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
 
@@ -19,30 +21,16 @@
             android:layout_marginBottom="24dp"
             android:layout_gravity="center_horizontal" />
 
-        <!-- Name Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_name"
+            <EditText android:id="@+id/ageS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint="Name" />
-        </android.support.design.widget.TextInputLayout>
-
-        <!--  Email Label -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:hint="Email" />
+                android:inputType="number"
+                android:hint="Age of the Suspect" />
         </android.support.design.widget.TextInputLayout>
 
         <!-- Address Label -->
@@ -51,61 +39,113 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
-            <Spinner android:id="@+id/input_gender"
-                android:layout_width="match_parent"
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/educationS"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPostalAddress" />
+                android:hint="Education Level"
+                app:met_floatingLabel="normal"
+                android:textColorHint="#000"
+                android:gravity="left"
+                />
         </android.support.design.widget.TextInputLayout>
 
 
-        <!-- mobile number -->
+        <!-- Address Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_age"
-                android:layout_width="match_parent"
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/alcoholS"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="Age" />
+                android:hint="Harmful alcohol usage"
+                app:met_floatingLabel="normal"
+                android:textColorHint="#000"
+                android:gravity="left"
+                />
         </android.support.design.widget.TextInputLayout>
 
-        <!-- Password Label -->
+
+        <!-- Address Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_password"
-                android:layout_width="match_parent"
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/threatenS"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="Password"/>
+                android:hint="Ever threaten with violence?"
+                app:met_floatingLabel="normal"
+                android:textColorHint="#000"
+                android:gravity="left"
+                />
         </android.support.design.widget.TextInputLayout>
 
-        <!-- Password Re-enter Label -->
+        <!-- Address Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_reEnterPassword"
-                android:layout_width="match_parent"
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/welfareS"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="Re-enter Password"/>
+                android:hint="Welfare level"
+                app:met_floatingLabel="normal"
+                android:textColorHint="#000"
+                android:gravity="left"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Address Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/blameS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Is he/she blames you?"
+                app:met_floatingLabel="normal"
+                android:textColorHint="#000"
+                android:gravity="left"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Address Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/violenceS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Violence History"
+                app:met_floatingLabel="normal"
+                android:textColorHint="#000"
+                android:gravity="left"
+                />
         </android.support.design.widget.TextInputLayout>
 
         <!-- Signup Button -->
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_next1"
+            android:id="@+id/btn_signup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
-            android:text="NEXT" />
+            android:text="SIGN UP" />
 
         <TextView android:id="@+id/link_login"
             android:layout_width="fill_parent"

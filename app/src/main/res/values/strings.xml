@@ -1,11 +1,43 @@
 <resources>
-    <string name="app_name">Material Login Example</string>
+    <string name="app_name">Domestic Violence Detector</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    
+
     <string-array name="gender">
         <item>Female</item>
         <item>Male</item>
     </string-array>
+    
+    <string-array name="age">
+        <item></item>
+    </string-array>
+    
+    <string-array name="education">
+        <item>Primary School</item>
+        <item>Secondary School</item>
+        <item>High School</item>
+        <item>University</item>
+    </string-array>
+
+    <string-array name="alcohol">
+        <item>Never</item>
+        <item>Occasional</item>
+        <item>Moderate</item>
+        <item>Usual</item>
+    </string-array>
+
+    <string-array name="threaten">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="welfare">
+        <item>Poor</item>
+        <item>Middle Class</item>
+        <item>Rich</item>
+    </string-array>
+
+
+
 </resources>

@@ -1,10 +1,12 @@
 package com.agu.domesticviolencedetector;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,7 +18,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.agu.domesticviolencedetector.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -37,9 +38,8 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        ButterKnife.bind(this);
         mFirebaseAuth = FirebaseAuth.getInstance();
-
+        ButterKnife.bind(this);
 
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -95,20 +95,17 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-//
-//        Log.d(TAG, "Login");
-//
-//        if (!validate()) {
-//            onLoginFailed();
-//        }
-//
-//
-//
-//        final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
-//                R.style.AppTheme_Dark_Dialog);
-//        progressDialog.setIndeterminate(true);
-//        progressDialog.setMessage("Authenticating...");
-//        progressDialog.show();
+
+        if (!validate()) {
+            onLoginFailed();
+        }
+
+        final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
+                R.style.AppTheme_Dark_Dialog);
+        progressDialog.setIndeterminate(true);
+        progressDialog.setMessage("Authenticating...");
+        progressDialog.show();
+
 //
 //
 //
@@ -150,7 +147,6 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLoginFailed() {
         Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
-
         _loginButton.setEnabled(true);
     }
 
